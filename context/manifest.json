@@ -1,0 +1,169 @@
+{
+  "project": {
+    "pz": {
+      "sig": {
+        "atNeed": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "atNeed"
+                },
+                "queryName": "needstate"
+              }
+            ]
+          }
+        },
+        "connecticutvisitor": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "vc-region",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "CT"
+                }
+              }
+            ]
+          }
+        },
+        "massvisitor": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "vc-region",
+                "type": "QK",
+                "match": {
+                  "cs": true,
+                  "op": "=",
+                  "rhs": "MA"
+                }
+              }
+            ]
+          }
+        },
+        "newJerseyVisitor": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "vc-region",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "NJ"
+                }
+              }
+            ]
+          }
+        },
+        "portugueseVisitor": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "vc-country",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "PT"
+                }
+              }
+            ]
+          }
+        },
+        "preNeed": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "preNeed"
+                },
+                "queryName": "needstate"
+              }
+            ]
+          }
+        },
+        "querystringP13n": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "left"
+                },
+                "queryName": "displaypref"
+              }
+            ]
+          }
+        },
+        "vermontvisitor": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "vc-region",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "VT"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {}
+  }
+}
