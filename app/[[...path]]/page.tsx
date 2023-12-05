@@ -7,7 +7,7 @@ import {
 import { resolveComponent } from "@/canvas/resolver";
 
 // This enables SSG. comment out to use SSR or ESR mode
-// export { generateStaticParams } from "@uniformdev/canvas-next-rsc";
+export { generateStaticParams } from "@uniformdev/canvas-next-rsc";
 
 // Enable for the edge mode
 export const runtime = "edge";
