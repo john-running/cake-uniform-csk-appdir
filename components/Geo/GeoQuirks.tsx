@@ -22,8 +22,8 @@ export const GeoQuirks = () => {
         context.update({
           quirks: {
             "vc-city": geo.city,
-            country: geo.country,
-            countryRegion: geo.countryRegion,
+            "vc-country": geo.country,
+            "vc-region": geo.countryRegion,
           },
         });
       }
