@@ -1,4 +1,4 @@
-//app/api/edge-geo/route.ts
+//app/api/geo/route.ts
 import { geolocation, ipAddress } from "@vercel/edge";
 
 export const runtime = "edge";
