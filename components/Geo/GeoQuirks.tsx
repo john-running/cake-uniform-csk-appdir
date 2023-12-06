@@ -17,11 +17,15 @@ export const GeoQuirks = () => {
       if (response.ok) {
         const geo = (await response.json()) as {
           city: string;
+          country: string;
+          countryRegion: string;
         };
 
         context.update({
           quirks: {
             city: geo.city,
+            country: geo.country,
+            countryRegion: geo.countryRegion,
           },
         });
       }
