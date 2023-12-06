@@ -1,5 +1,6 @@
 import "@/styles/globals.scss";
 import { UniformContext } from "@uniformdev/canvas-next-rsc";
+import { GeoQuirks } from "../components/Geo/GeoQuirks";
 
 export default function RootLayout({
   children,
@@ -9,7 +10,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <UniformContext>{children}</UniformContext>
+        <UniformContext>
+          {children}
+          <GeoQuirks />
+        </UniformContext>
       </body>
     </html>
   );
