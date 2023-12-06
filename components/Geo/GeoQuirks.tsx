@@ -12,15 +12,15 @@ export const GeoQuirks = () => {
     }
 
     (async () => {
-      const response = await fetch("https://next.joincake.com/api/edge-geo/");
-
+      const response = await fetch("/api/geo/");
+      console.log("response", response);
       if (response.ok) {
         const geo = (await response.json()) as {
           city: string;
           country: string;
           countryRegion: string;
         };
-
+        console.log("geo", geo);
         context.update({
           quirks: {
             city: "geo.city",
