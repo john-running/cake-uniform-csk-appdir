@@ -23,7 +23,7 @@ export const GeoQuirks = () => {
 
         context.update({
           quirks: {
-            city: geo.city,
+            city: "geo.city",
             country: geo.country,
             countryRegion: geo.countryRegion,
           },
