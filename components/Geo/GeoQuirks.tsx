@@ -13,17 +13,15 @@ export const GeoQuirks = () => {
 
     (async () => {
       const response = await fetch("/api/geo/");
-      console.log("response", response);
       if (response.ok) {
         const geo = (await response.json()) as {
           city: string;
           country: string;
           countryRegion: string;
         };
-        console.log("geo", geo);
         context.update({
           quirks: {
-            city: "geo.city",
+            city: geo.city,
             country: geo.country,
             countryRegion: geo.countryRegion,
           },
