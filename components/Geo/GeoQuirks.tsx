@@ -12,7 +12,7 @@ export const GeoQuirks = () => {
     }
 
     (async () => {
-      const response = await fetch("https://next.joincake.com/api/edge-geo/");
+      const response = await fetch("/api/edge-geo/");
 
       if (response.ok) {
         const geo = (await response.json()) as {
